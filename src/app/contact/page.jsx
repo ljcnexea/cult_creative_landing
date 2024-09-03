@@ -1,6 +1,6 @@
-import Header from "@/app/components/Header.jsx";
 import { Suspense } from "react";
-import { Content } from "./Content.jsx";
+import Header from "@/app/components/Header.jsx";
+import Content from "./Content.jsx"; 
 import LastSection from "@/app/sections/brandsection/LastSection.jsx";
 
 export const metadata = {

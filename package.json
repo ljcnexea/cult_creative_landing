@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "npx prisma generate && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "npx prisma migrate deploy"
   },
   "dependencies": {
     "@iconify/react": "^4.1.1",

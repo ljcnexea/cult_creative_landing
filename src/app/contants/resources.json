@@ -2,56 +2,78 @@
   {
     "title": "A Starter’s Guide for Content Creators in Malaysia",
     "image": "/images/resources/resource1.png",
-    "path": "/resources/a-starters-guide-for-content-creators-in-malaysia"
+    "path": "/resources/a-starters-guide-for-content-creators-in-malaysia",
+    "author": "Cult Creative",
+    "authorImage": "/images/creator/cc_logo5.png"
   },
   {
     "title": "Unlocking the Power of UGC Brand Deals",
     "image": "/images/resources/resource2.png",
-    "path": "/resources/unlocking-the-power-of-influencer-brand-deals"
+    "path": "/resources/unlocking-the-power-of-influencer-brand-deals",
+    "author": "Cult Creative",
+    "authorImage": "/images/creator/cc_logo5.png"
   },
   {
     "title": "Turn Your Content Creation Passion into Profit",
     "image": "/images/resources/resource3.png",
-    "path": "/resources/turn-your-content-creation-passion-into-profit"
+    "path": "/resources/turn-your-content-creation-passion-into-profit",
+    "author": "Cult Creative",
+    "authorImage": "/images/creator/cc_logo5.png"
   },
   {
     "title": "Key UGC Content Creation Ideas and How to Stay Inspired",
     "image": "/images/resources/resource4.png",
-    "path": "/resources/key-ugc-content-creation-ideas-and-how-to-stay-inspired"
+    "path": "/resources/key-ugc-content-creation-ideas-and-how-to-stay-inspired",
+    "author": "Cult Creative",
+    "authorImage": "/images/creator/cc_logo5.png"
   },
   {
     "title": "UGC Creativity How-To Guide + Examples",
     "image": "/images/resources/resource5.png",
-    "path": "/resources/unlocking-ugc-creativity-howto-guide-examples"
+    "path": "/resources/unlocking-ugc-creativity-howto-guide-examples",
+    "author": "Cult Creative",
+    "authorImage": "/images/creator/cc_logo5.png"
   },
   {
     "title": "Why and How Does Creator Marketing Work?",
     "image": "/images/resources/resource6.png",
-    "path": "/resources/why-and-how-does-creator-marketing-work"
+    "path": "/resources/why-and-how-does-creator-marketing-work",
+    "author": "Cult Creative",
+    "authorImage": "/images/creator/cc_logo5.png"
   },
   {
     "title": "The Impact of Malaysian Creator Marketing on Brand Awareness and Sales",
     "image": "/images/resources/resource7.png",
-    "path": "/resources/the-impact-of-malaysian-creator-marketing-on-brand-awareness-and-sales"
+    "path": "/resources/the-impact-of-malaysian-creator-marketing-on-brand-awareness-and-sales",
+    "author": "Cult Creative",
+    "authorImage": "/images/creator/cc_logo5.png"
   },
   {
     "title": "Common Challenges That Businesses Face When Dealing with Content Creators",
     "image": "/images/resources/resource8.png",
-    "path": "/resources/common-challenges-that-businesses-face-when-dealing-with-content-creators"
+    "path": "/resources/common-challenges-that-businesses-face-when-dealing-with-content-creators",
+    "author": "Asirah Abdul Kadir",
+    "authorImage": "/images/creator/asirah.jpeg"
   },
   {
     "title": "What Is UGC?",
     "image": "/images/resources/resource9.png",
-    "path": "/resources/what-is-ugc"
+    "path": "/resources/what-is-ugc",
+    "author": "Asirah Abdul Kadir",
+    "authorImage": "/images/creator/asirah.jpeg"
   },
   {
     "title": "The Power of User-Generated Content (UGC) for Businesses: Why It’s Worth the Investment",
     "image": "/images/resources/resource10.png",
-    "path": "/resources/the-power-of-usergenerated-content-ugc-for-businesses-why-its-worth-the-investment"
+    "path": "/resources/the-power-of-usergenerated-content-ugc-for-businesses-why-its-worth-the-investment",
+    "author": "Asirah Abdul Kadir",
+    "authorImage": "/images/creator/asirah.jpeg"
   },
   {
     "title": "Elevating Your Brand with Cult Creative",
     "image": "/images/resources/resource11.png",
-    "path": "/resources/elevating-your-brand-with-cult-creative"
+    "path": "/resources/elevating-your-brand-with-cult-creative",
+    "author": "Asirah Abdul Kadir",
+    "authorImage": "/images/creator/asirah.jpeg"
   }
 ]

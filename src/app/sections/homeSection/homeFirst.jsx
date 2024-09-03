@@ -28,6 +28,7 @@ const HomeFirst = () => {
 
   return (
     <section className="p-8 bg-[#1340FF]">
+      
       <div className="flex lg:flex-row flex-col justify-stretch gap-10 items-center lg:items-start text-[#F4F4F4]">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
@@ -124,7 +125,7 @@ const HomeFirst = () => {
             whileTap={{ scale: 0.8 }}
             className="bg-slate-100 py-2 px-12 rounded-full text-[#1340FF] font-aileron uppercase font-bold"
           >
-            Get Started
+            Our Services
           </motion.button>
         </Link>
       </div>

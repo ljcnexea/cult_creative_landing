@@ -15,7 +15,6 @@ RUN \
     else echo "Lockfile not found." && exit 1; \
     fi
 
-
 # Rebuild the source code only when needed
 FROM base AS builder
 WORKDIR /app
@@ -33,6 +32,9 @@ RUN \
     elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm run build; \
     else echo "Lockfile not found." && exit 1; \
     fi
+
+# Generate Prisma Client
+# RUN yarn deploy
 
 # Production image, copy all the files and run next
 FROM base AS runner

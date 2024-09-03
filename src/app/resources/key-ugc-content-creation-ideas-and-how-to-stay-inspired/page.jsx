@@ -2,6 +2,19 @@ import resources from "@/app/contants/resources.json";
 import * as rp from "@/app/components/resource-page.jsx";
 
 const resource = resources[3];
+const relatedResources = [
+  resources[2], 
+  resources[4],
+  resources[5],
+];
+
+const latestResources = [
+  resource[0]
+];
+
+for(let x = 0; x < resources.length; x++){
+  latestResources.push(resources[x])
+}
 
 const title = resource.title;
 
@@ -30,7 +43,7 @@ export const metadata = {
 const Resource4 = () => {
   return (
     <>
-      <rp.Page keywords={keywords}>
+      <rp.Page keywords={keywords} relatedResources={relatedResources} latestResources={latestResources}>
         <rp.h1>{title}</rp.h1>
 
         <rp.h2>Staying Motivated and Inspired as a Content Creator</rp.h2>

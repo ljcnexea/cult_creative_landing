@@ -159,11 +159,10 @@ export const CreatorForm = () => {
                     <select
                       name="pronoun"
                       {...field}
-                      className={`block w-full rounded-full border-2 py-2 px-4 shadow-sm placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-[${color}] ${
-                        errors.pronoun &&
+                      className={`block w-full rounded-full border-2 py-2 px-4 shadow-sm placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-[${color}] ${errors.pronoun &&
                         touched.pronoun &&
                         "border-red-500"
-                      }`}
+                        }`}
                     >
                       <option value="">Select one...</option>
                       <option>He/Him</option>
@@ -220,11 +219,10 @@ export const CreatorForm = () => {
                   <div className="mt-2">
                     <select
                       {...field}
-                      className={`block w-full rounded-full border-2 py-2 px-4 shadow-sm placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-[${color}] ${
-                        errors.nationality &&
+                      className={`block w-full rounded-full border-2 py-2 px-4 shadow-sm placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-[${color}] ${errors.nationality &&
                         touched.nationality &&
                         "border-red-500"
-                      }`}
+                        }`}
                     >
                       <option value="">Select one...</option>
                       {countries.map((elem) => (
@@ -242,40 +240,34 @@ export const CreatorForm = () => {
             </Field>
           </div>
           <div className="sm:col-span-3">
-            <Field name="location">
-              {({ field, form: { errors, touched } }) => (
-                <>
-                  <label
-                    htmlFor="location"
-                    className="block text-sm font-medium leading-6"
-                  >
-                    Current Location
-                  </label>
-                  <div className="mt-2">
-                    <select
-                      name="location"
-                      {...field}
-                      className={`block w-full rounded-full border-2 py-2 px-4 shadow-sm placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-[${color}] ${
-                        errors.location &&
-                        touched.location &&
-                        "border-red-500"
-                      }`}
-                    >
-                      <option value="">Select one...</option>
-                      <option>Kuala Lumpur</option>
-                      <option>Petaling Jaya</option>
-                      <option>Johor Bahru</option>
-                      <option>Penang</option>
-                    </select>
-                  </div>
-                  {errors.location && touched.location && (
-                    <p class="text-red-500 text-xs mx-2 my-1">
-                      {errors.location}
-                    </p>
-                  )}
-                </>
-              )}
-            </Field>
+          <Field name="location">
+  {({ field, form: { errors, touched } }) => (
+    <>
+      <label
+        htmlFor="location"
+        className="block text-sm font-medium leading-6"
+      >
+        Current Location
+      </label>
+      <div className="mt-2">
+        <input
+          type="text"
+          name="location"
+          {...field}
+          className={`block w-full rounded-full border-2 py-2 px-4 shadow-sm placeholder:text-gray-400 placeholder:italic focus:outline-none sm:text-sm sm:leading-6 bg-[${color}] ${errors.location && touched.location ? "border-red-500" : "border-gray-300"
+            }`}
+          placeholder="Where's your location?"
+        />
+      </div>
+
+      {errors.location && touched.location && (
+        <p className="text-red-500 text-xs mx-2 my-1">
+          {errors.location}
+        </p>
+      )}
+    </>
+  )}
+</Field>
           </div>
           <Field name="dateOfBirth">
             {({ field, form: { errors, touched } }) => (
@@ -386,11 +378,10 @@ export const CreatorForm = () => {
                     <select
                       name="employmentType"
                       {...field}
-                      className={`block w-full rounded-full border-2 py-2 px-4 shadow-sm placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-[${color}] ${
-                        errors.employmentType &&
+                      className={`block w-full rounded-full border-2 py-2 px-4 shadow-sm placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-[${color}] ${errors.employmentType &&
                         touched.employmentType &&
                         "border-red-500"
-                      }`}
+                        }`}
                     >
                       <option value="">Select one...</option>
                       <option>Full-time</option>

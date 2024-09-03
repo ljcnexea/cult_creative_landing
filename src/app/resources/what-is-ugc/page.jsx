@@ -2,6 +2,19 @@ import resources from "@/app/contants/resources.json";
 import * as rp from "@/app/components/resource-page.jsx";
 
 const resource = resources[8];
+const relatedResources = [
+  resources[7], 
+  resources[9],
+  resources[10],
+];
+
+const latestResources = [
+  resource[0]
+];
+
+for(let x = 0; x < resources.length; x++){
+  latestResources.push(resources[x])
+}
 
 const title = resource.title;
 
@@ -28,7 +41,7 @@ export const metadata = {
 const Resource9 = () => {
   return (
     <>
-      <rp.Page keywords={keywords}>
+      <rp.Page keywords={keywords} relatedResources={relatedResources} latestResources={latestResources}>
         <rp.h1>{title}</rp.h1>
         <rp.p>
           The digital landscape is rapidly changing, and so is our relationship with social media.

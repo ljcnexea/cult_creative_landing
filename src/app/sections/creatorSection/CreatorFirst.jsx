@@ -80,7 +80,7 @@ const CreatorFirst = () => {
                 whileTap={{ scale: 0.8 }}
                 className="bg-slate-100 py-2 px-12 rounded-full text-[#006D53] font-aileron font-bold uppercase"
               >
-                Get Started
+                Become A Creator 
               </motion.button>
             </Link>
           </div>

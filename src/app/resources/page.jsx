@@ -22,7 +22,7 @@ const Resources = () => {
           </h1>
         </div>
         <div className="px-5 py-10 bg-slate-300">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
             {resources.map((elem, i) => (
               <div key={i} className="cursor-pointer">
                 <News
@@ -30,6 +30,10 @@ const Resources = () => {
                   image={elem.image}
                   type="resource"
                   path={elem.path}
+                  author={elem.author}
+                  authorImage={elem.authorImage}
+                  titleClassName="text-2xl md:text-3xl lg:text-4xl font-bold" 
+                  imageClassName="w-full h-auto object-contain" 
                 />
               </div>
             ))}
