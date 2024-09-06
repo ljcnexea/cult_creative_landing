@@ -3,6 +3,19 @@ import * as rp from "@/app/components/resource-page.jsx";
 import { whatsappLink_interestedMsg } from "@/app/components/misc.js";
 
 const resource = resources[10];
+const relatedResources = [
+  resources[1], 
+  resources[2],
+  resources[3],
+];
+
+const latestResources = [
+  resource[0]
+];
+
+for(let x = 0; x < resources.length; x++){
+  latestResources.push(resources[x])
+}
 
 const title = resource.title;
 
@@ -28,7 +41,7 @@ export const metadata = {
 const Resource11 = () => {
   return (
     <>
-      <rp.Page keywords={keywords}>
+      <rp.Page keywords={keywords} relatedResources={relatedResources} latestResources={latestResources}>
         <rp.h1>{title}</rp.h1>
         <rp.p>
           The Internet is oversaturated with content, from news updates and celebrity gossip to fast-moving trends and memes.

@@ -2,6 +2,18 @@ import resources from "@/app/contants/resources.json";
 import * as rp from "@/app/components/resource-page.jsx";
 
 const resource = resources[9];
+const relatedResources = [
+  resources[5], 
+  resources[9],
+  resources[0],
+];
+const latestResources = [
+  resource[0]
+];
+
+for(let x = 0; x < resources.length; x++){
+  latestResources.push(resources[x])
+}
 
 const title = resource.title;
 
@@ -29,7 +41,7 @@ export const metadata = {
 const Resource10 = () => {
   return (
     <>
-      <rp.Page keywords={keywords}>
+      <rp.Page keywords={keywords} relatedResources={relatedResources} latestResources={latestResources}>
         <rp.h1>{title}</rp.h1>
         <rp.p>
           Businesses are adopting and experimenting with the growing number of
@@ -46,13 +58,6 @@ const Resource10 = () => {
           necessity for any modern business.
         </rp.p>
         <rp.IgEmbed url="https://www.instagram.com/p/C6GQr38Oehb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" />
-
-        <rp.h2>Organic UGC</rp.h2>
-        <rp.p>
-          These are content created voluntarily by the consumers, simply because
-          they feel inspired to share a good word about the business with their
-          followers.
-        </rp.p>
 
         <rp.h2>Improves Efficiency</rp.h2>
         <rp.p>

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "npx prisma generate && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "npx prisma migrate deploy"
   },
   "dependencies": {
     "@iconify/react": "^4.1.1",
@@ -15,7 +16,7 @@
     "formik": "^2.4.5",
     "framer-motion": "^11.0.12",
     "googleapis": "^137.1.0",
-    "next": "^14.2.4",
+    "next": "^14.2.7",
     "prop-types": "^15.8.1",
     "react": "^18",
     "react-countup": "^6.5.3",
@@ -33,5 +34,6 @@
     "postcss": "^8",
     "prisma": "^5.12.1",
     "tailwindcss": "^3.3.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

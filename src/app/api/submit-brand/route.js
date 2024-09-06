@@ -34,25 +34,27 @@ export const POST = async (req) => {
       }),
       {
         status: 200,
-      },
+      }
     );
   } catch (error) {
+    console.log(error);
     return new NextResponse(
       JSON.stringify({
         error: "Form failed to submit. Please contact our admin.",
       }),
       {
         status: 404,
-      },
+      }
     );
   }
 };
 
-export const GET = async () => new NextResponse(
-  JSON.stringify({
-    message: "Hello",
-  }),
-  {
-    status: 200,
-  },
-);
+export const GET = async () =>
+  new NextResponse(
+    JSON.stringify({
+      message: "Hello",
+    }),
+    {
+      status: 200,
+    }
+  );

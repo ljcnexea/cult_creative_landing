@@ -40,3 +40,7 @@ videos/*
 !videos/*.json
 !videos/*.js
 !videos/*.ts
+
+/databaseConfig
+.env
+cult_creative_cloud.json

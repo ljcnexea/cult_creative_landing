@@ -1,7 +1,21 @@
+import Image from "next/image";
+import Link from "next/link";
 import resources from "@/app/contants/resources.json";
 import * as rp from "@/app/components/resource-page.jsx";
 
-const resource = resources[0];
+const resource = resources[0]; 
+const relatedResources = [
+  resources[2], 
+  resources[3],
+  resources[4],
+]; 
+const latestResources = [
+  resource[0]
+];
+
+for(let x = 0; x < resources.length; x++){
+  latestResources.push(resources[x])
+}
 
 const title = resource.title;
 
@@ -28,7 +42,7 @@ export const metadata = {
 const Resource1 = () => {
   return (
     <>
-      <rp.Page keywords={keywords}>
+      <rp.Page keywords={keywords} relatedResources={relatedResources} latestResources={latestResources}>
         <rp.h1>{title}</rp.h1>
         <rp.p>
           Content creators have become a pivotal part of social media marketing
@@ -107,6 +121,37 @@ const Resource1 = () => {
           </rp.a>{" "}
           and you’re on your way to securing your next brand deal.
         </rp.p>
+
+        {/* <div className="mt-8">
+          <h3 className="text-lg font-semibold mb-4">You’ll Also Like</h3>
+          <div className="flex flex-wrap gap-4">
+            {relatedResources.map((relatedResource) => (
+              <div key={relatedResource.path} className="flex-shrink-0 w-60">
+                <Link href={relatedResource.path}>
+                  <div className="relative w-full h-32 cursor-pointer overflow-hidden">
+                    <Image
+                      src={relatedResource.image}
+                      alt={relatedResource.title}
+                      layout="fill"
+                      objectFit="cover"
+                      className="rounded-md"
+                    />
+                  </div>
+                </Link>
+                <div className="flex flex-col justify-center mt-2">
+                  <Link href={relatedResource.path} passHref>
+                    <p className="text-sm font-medium text-black no-underline cursor-pointer">
+                      {relatedResource.title}
+                    </p>
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div> */}
+
+        <rp.h2 className="mt-8">Keywords</rp.h2>
+        <rp.p>{keywords.join(", ")}</rp.p>
 
         <rp.h2>Conclusion</rp.h2>
         <rp.p>

@@ -2,9 +2,21 @@ import resources from "@/app/contants/resources.json";
 import * as rp from "@/app/components/resource-page.jsx";
 
 const resource = resources[6];
+const relatedResources = [
+  resources[5], 
+  resources[9],
+  resources[0],
+];
+const latestResources = [
+  resource[0]
+];
+
+for(let x = 0; x < resources.length; x++){
+  latestResources.push(resources[x])
+}
+
 
 const title = resource.title;
-
 const keywords = [
   "Malaysian creator marketing",
   "Brand awareness in Malaysia",
@@ -28,7 +40,7 @@ export const metadata = {
 const Resource7 = () => {
   return (
     <>
-      <rp.Page keywords={keywords}>
+      <rp.Page keywords={keywords} relatedResources={relatedResources} latestResources={latestResources}>
         <rp.h1>{title}</rp.h1>
         <rp.p>
           As social media continues to transform every day itself into an information-sharing and learning platform, the role of creator marketing has become increasingly important in spreading brand awareness to larger networks of consumers.

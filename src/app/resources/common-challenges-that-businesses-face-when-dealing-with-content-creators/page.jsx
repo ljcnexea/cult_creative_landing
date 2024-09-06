@@ -1,7 +1,21 @@
+import Image from "next/image";
+import Link from "next/link";
 import resources from "@/app/contants/resources.json";
 import * as rp from "@/app/components/resource-page.jsx";
 
 const resource = resources[7];
+const relatedResources = [
+  resources[5], 
+  resources[9],
+  resources[0],
+];
+const latestResources = [
+  resource[0]
+];
+
+for(let x = 0; x < resources.length; x++){
+  latestResources.push(resources[x])
+}
 
 const title = resource.title;
 
@@ -28,7 +42,7 @@ export const metadata = {
 const Resource8 = () => {
   return (
     <>
-      <rp.Page keywords={keywords}>
+      <rp.Page keywords={keywords} relatedResources={relatedResources} latestResources={latestResources}>
         <rp.h1>{title}</rp.h1>
         <rp.p>
           Consumer behaviours are changing.
@@ -124,6 +138,23 @@ const Resource8 = () => {
             Book a call
           </rp.a>{" "}
           with us today!
+        </rp.p>
+
+     
+
+        <rp.h2 className="mt-8">Keywords</rp.h2>
+        <rp.p>{keywords.join(", ")}</rp.p>
+
+        <rp.h2>Conclusion</rp.h2>
+        <rp.p>
+          It can be both exciting and complex to work with brands. It is the
+          path to elevating your career and creative endeavours.
+        </rp.p>
+        <rp.p>
+          With this guide, you’ll be well-equipped to forge successful
+          partnerships with brands whilst also retaining the trust and loyalty
+          of your audience. Remember to always be authentic, transparent, and
+          genuine about your content no matter who you’re creating it for.
         </rp.p>
       </rp.Page>
     </>
