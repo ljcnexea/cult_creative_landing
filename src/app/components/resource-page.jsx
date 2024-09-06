@@ -11,7 +11,7 @@ import { InstagramEmbed } from "react-social-media-embed";
 
 // `children` should contain the elements defined here
 // `keywords` shall be an array of strings
-export const Page = ({ children, keywords = [], relatedResources = [] }) => (
+export const Page = ({ children, keywords = [], relatedResources = [], latestResources = [] }) => (
   <>
     <Header />
     <main className="flex min-h-screen flex-col bg-[#F4F4F4] text-white">
@@ -69,13 +69,47 @@ export const Page = ({ children, keywords = [], relatedResources = [] }) => (
               </div>
             ))}
           </div>
-          
+        </div>
+        {/* The Latest */}
+        <div className="col-span-3">
+          <div className="mt-8">
+            <p className="text-start text-2xl font-semibold text-black">The <i class=" font-semibold cursive">latest</i></p>
+            <div className="flex flex-nowrap gap-6 my-4 overflow-x-auto">
+              {latestResources.length > 0 ? (
+                latestResources.map((latestResource) => (
+                  <div key={latestResource.path} className="flex-column gap-4">
+                    <Link href={latestResource.path}>
+                      <div className="relative w-64 h-72 flex-shrink-0 cursor-pointer overflow-hidden">
+                        <Image
+                          src={latestResource.image}
+                          alt={latestResource.title}
+                          layout="fill"
+                          objectFit="cover"
+                          className="rounded-md transition-transform duration-300 ease-in-out transform hover:scale-105"
+                        />
+                      </div>
+                    </Link>
+                    <div className="flex flex-row justify-center">
+                      <Link href={latestResource.path} passHref>
+                        <p className="text-lg font-medium text-black text-wrap md:w-64 text-center no-underline cursor-pointer">
+                          {latestResource.title}
+                        </p>
+                      </Link>
+                    </div>
+                  </div>
+                ))
+              ) : (
+                <p>No related resources available.</p>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </main>
     <LastSection color="#1340FF" />
   </>
 );
+
 
 export const h1 = ({ children }) => (
   <h1

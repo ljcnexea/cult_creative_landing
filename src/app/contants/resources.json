@@ -1,68 +1,79 @@
 [
   {
     "title": "A Starter’s Guide for Content Creators in Malaysia",
-    "image": "/images/resources/resource1.png",
+    "image": "/images/resources/A Starter’s Guide for Content Creators in Malaysia.jpeg",
     "path": "/resources/a-starters-guide-for-content-creators-in-malaysia",
+    "authorImage":"/images/creator/cc_logo5.png",
     "author": "Cult Creative"
   },
   {
     "title": "Unlocking the Power of UGC Brand Deals",
-    "image": "/images/resources/resource2.png",
+    "image": "/images/resources/Unlocking the Power of Influencer Brand Deals.jpeg",
     "path": "/resources/unlocking-the-power-of-influencer-brand-deals",
+    "authorImage":"/images/creator/cc_logo5.png",
     "author": "Cult Creative"
   },
   {
     "title": "Turn Your Content Creation Passion into Profit",
-    "image": "/images/resources/resource3.png",
+    "image": "/images/resources/Turn Your Content Creation Passion into Profit.jpeg",
     "path": "/resources/turn-your-content-creation-passion-into-profit",
+    "authorImage":"/images/creator/cc_logo5.png",
     "author": "Cult Creative"
   },
   {
     "title": "Key UGC Content Creation Ideas and How to Stay Inspired",
-    "image": "/images/resources/resource4.png",
+    "image": "/images/resources/Key UGC Content Creation Ideas and How to Stay Inspired.jpeg",
     "path": "/resources/key-ugc-content-creation-ideas-and-how-to-stay-inspired",
+    "authorImage":"/images/creator/cc_logo5.png",
     "author": "Cult Creative"
   },
   {
     "title": "UGC Creativity How-To Guide + Examples",
-    "image": "/images/resources/resource5.png",
+    "image": "/images/resources/Unlocking UGC Creativity_ How-To Guide + Examples.jpeg",
     "path": "/resources/unlocking-ugc-creativity-howto-guide-examples",
+    "authorImage":"/images/creator/cc_logo5.png",
     "author": "Cult Creative"
   },
   {
     "title": "Why and How Does Creator Marketing Work?",
-    "image": "/images/resources/resource6.png",
+    "image": "/images/resources/Why and How Does Creator Marketing Work_.jpeg",
     "path": "/resources/why-and-how-does-creator-marketing-work",
+    "authorImage":"/images/creator/cc_logo5.png",
     "author": "Cult Creative"
   },
   {
     "title": "The Impact of Malaysian Creator Marketing on Brand Awareness and Sales",
-    "image": "/images/resources/resource7.png",
+    "image": "/images/resources/The Impact of Malaysian Creator Marketing on Brand Awareness and Sales.JPG",
     "path": "/resources/the-impact-of-malaysian-creator-marketing-on-brand-awareness-and-sales",
+    "authorImage":"/images/creator/cc_logo5.png",
     "author": "Cult Creative"
   },
   {
     "title": "Common Challenges That Businesses Face When Dealing with Content Creators",
-    "image": "/images/resources/resource8.png",
+    "image": "/images/resources/Common Challenges That Businesses Face When Dealing with Content Creators.jpeg",
     "path": "/resources/common-challenges-that-businesses-face-when-dealing-with-content-creators",
+    "authorImage":"/images/creator/Asirah Abdul Kadir.png",
     "author": "Asirah Abdul Kadir"
   },
   {
     "title": "What Is UGC?",
-    "image": "/images/resources/resource9.png",
+    "image": "/images/resources/What Is UGC_.jpeg",
     "path": "/resources/what-is-ugc",
+    "authorImage":"/images/creator/Asirah Abdul Kadir.png",
     "author": "Asirah Abdul Kadir"
   },
   {
     "title": "The Power of User-Generated Content (UGC) for Businesses: Why It’s Worth the Investment",
-    "image": "/images/resources/resource10.png",
+    "image": "/images/resources/The Power of User-Generated Content (UGC) for Businesses_ Why It’s Worth the Investment.jpeg",
     "path": "/resources/the-power-of-usergenerated-content-ugc-for-businesses-why-its-worth-the-investment",
+    "authorImage":"/images/creator/Asirah Abdul Kadir.png",
     "author": "Asirah Abdul Kadir"
   },
   {
     "title": "Elevating Your Brand with Cult Creative",
-    "image": "/images/resources/resource11.png",
+    "image": "/images/resources/Elevating Your Brand with Cult Creative.jpeg",
     "path": "/resources/elevating-your-brand-with-cult-creative",
+    "authorImage":"/images/creator/Asirah Abdul Kadir.png",
     "author": "Asirah Abdul Kadir"
   }
 ]

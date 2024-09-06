@@ -31,6 +31,7 @@ const Resources = () => {
                   type="resource"
                   path={elem.path}
                   author={elem.author}
+                  authorImage={elem.authorImage}
                   titleClassName="text-2xl md:text-3xl lg:text-4xl font-bold" 
                   imageClassName="w-full h-auto object-contain" 
                 />

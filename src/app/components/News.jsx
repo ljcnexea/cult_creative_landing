@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const News = ({ image, date, link, title, source, type, path, author }) => {
+const News = ({ image, date, link, title, source, type, path, author, authorImage }) => {
   const href = type === "resource" ? path : link;
 
   return (
@@ -41,9 +41,18 @@ const News = ({ image, date, link, title, source, type, path, author }) => {
               {title}
             </p>
             {author && (
-              <p className="text-[10px] md:text-xs text-gray-700 mb-2 md:mb-3">
+              <div className="flex items-center text-[10px] md:text-xs text-gray-700 mb-2 md:mb-3">
+              <Image
+                src={authorImage}
+                alt={author}
+                width={24} 
+                height={24} 
+                className="rounded-full mr-2"
+              />
+              <p>
                 Written by <span className="font-semibold">{author}</span>
               </p>
+            </div>
             )}
           </div>
         </Link>

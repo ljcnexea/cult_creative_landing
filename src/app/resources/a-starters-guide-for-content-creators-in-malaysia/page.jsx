@@ -9,6 +9,13 @@ const relatedResources = [
   resources[3],
   resources[4],
 ]; 
+const latestResources = [
+  resource[0]
+];
+
+for(let x = 0; x < resources.length; x++){
+  latestResources.push(resources[x])
+}
 
 const title = resource.title;
 
@@ -35,7 +42,7 @@ export const metadata = {
 const Resource1 = () => {
   return (
     <>
-      <rp.Page keywords={keywords} relatedResources={relatedResources}>
+      <rp.Page keywords={keywords} relatedResources={relatedResources} latestResources={latestResources}>
         <rp.h1>{title}</rp.h1>
         <rp.p>
           Content creators have become a pivotal part of social media marketing

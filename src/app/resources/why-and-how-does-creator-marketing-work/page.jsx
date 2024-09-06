@@ -8,6 +8,14 @@ const relatedResources = [
   resources[0],
 ];
 
+const latestResources = [
+  resource[0]
+];
+
+for(let x = 0; x < resources.length; x++){
+  latestResources.push(resources[x])
+}
+
 const title = resource.title;
 
 const keywords = [
@@ -33,7 +41,7 @@ export const metadata = {
 const Resource6 = () => {
   return (
     <>
-      <rp.Page keywords={keywords} relatedResources={relatedResources}>
+      <rp.Page keywords={keywords} relatedResources={relatedResources} latestResources={latestResources}>
         <rp.h1>{title}</rp.h1>
         <rp.p>
           Here’s the short answer: people no longer want brands to simply sell to them.

@@ -7,6 +7,14 @@ const relatedResources = [
   resources[9],
   resources[0],
 ];
+const latestResources = [
+  resource[0]
+];
+
+for(let x = 0; x < resources.length; x++){
+  latestResources.push(resources[x])
+}
+
 
 const title = resource.title;
 const keywords = [
@@ -32,7 +40,7 @@ export const metadata = {
 const Resource7 = () => {
   return (
     <>
-      <rp.Page keywords={keywords} relatedResources={relatedResources}>
+      <rp.Page keywords={keywords} relatedResources={relatedResources} latestResources={latestResources}>
         <rp.h1>{title}</rp.h1>
         <rp.p>
           As social media continues to transform every day itself into an information-sharing and learning platform, the role of creator marketing has become increasingly important in spreading brand awareness to larger networks of consumers.

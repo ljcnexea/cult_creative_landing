@@ -8,6 +8,15 @@ const relatedResources = [
   resources[0],
 ];
 
+const latestResources = [
+  resource[0]
+];
+
+for(let x = 0; x < resources.length; x++){
+  latestResources.push(resources[x])
+}
+
+
 // Not to match `resource.title`
 const title = "Unlocking UGC Creativity: How-To Guide + Examples";
 
@@ -33,7 +42,7 @@ export const metadata = {
 const Resource5 = () => {
   return (
     <>
-      <rp.Page keywords={keywords} relatedResources={relatedResources}>
+      <rp.Page keywords={keywords} relatedResources={relatedResources} latestResources={latestResources}>
         <rp.h1>{title}</rp.h1>
         <rp.p>
           UGC (user-generated content) has been on the rise as brands begin to embrace it as a valuable marketing tool. This has led to a growing interest among younger generations to explore content creation as means of income.
